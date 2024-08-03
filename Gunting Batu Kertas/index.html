@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gunting Batu Kertas</title>
+	<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Gunting Batu Kertas</h1>
+		<div class="pilihan">
+			<button onclick="mainkanGame('gunting')">Gunting</button>
+			<button onclick="mainkanGame('batu')">Batu</button>
+			<button onclick="mainkanGame('kertas')">Kertas</button>
+		</div>
+
+		<div class="hasil">
+			<p id="pilihan-pemain">Pilihan kamu: </p>
+			<p id="pilihan-komputer">Pilihan komputer: </p>
+			<p id="hasil-game">Hasil: </p>
+		</div>
+
+		<table id="tabel-hasil">
+			<thead>
+				<tr>
+					<th>Putaran</th>
+					<th>Pilihan Kamu</th>
+					<th>Pilihan Komputer</th>
+					<th>Hasil</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<button class="reset-button" onclick="resetGame()">Reset</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
